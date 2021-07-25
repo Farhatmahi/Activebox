@@ -1,0 +1,511 @@
+/*
+    1.common css
+    2.font css
+    3.menu css
+
+    =============================
+    table of content
+    =============================
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.full-wrapper{
+    width: 100%;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*===========================
+common css ends
+=============================*/
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url(../fonts/raleway/static/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'raleway-reg';
+    src: url(../fonts/raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'raleway-semi';
+    src: url(../fonts/raleway/static/Raleway-SemiBold.ttf);
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+/*===========================
+font css ends
+=============================*/
+
+.m-30{
+    margin: 0 30px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.mr-70{
+    margin-right: 70px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+/*================================
+spacing css ends*/
+.menu-bg{
+    height: 100px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.menu-bg .menu{
+    height: 100px;
+    /* background-color:blue;  */
+}
+.menu-bg .menu .logo{
+    width: 200px;
+    height: 100px;
+    /* background-color: green; */
+    float: left;
+}
+.menu-bg .menu .logo img{
+    width: 100%;
+    padding-top: 38px;
+}
+.menu-bg .menu .menu-list{
+    width: 970px;
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    float: left;
+}
+.menu-bg .menu .menu-list ul{
+    float: right;
+}
+.menu-bg .menu .menu-list ul li{
+    float: left;
+    padding-left: 60px;
+}
+.menu-bg .menu .menu-list ul li a{
+    line-height: 100px;
+    color: white;
+    
+    text-transform: uppercase;
+    font-family: 'raleway-bold';
+    font-size: 13px;
+    transition: all linear 0.4s;
+    transform: scale(1);
+    display: block;
+}
+.menu-bg .menu .menu-list ul li a:hover{
+    color: #e84545;
+    transform: scale(1.2);
+}
+
+/*======================================
+menu ends 
+=======================================*/
+
+.banner-bg{
+    height: 750px;
+    background: url(../Images/banner.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+.banner-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 46, 74, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-bg .banner{
+    height: 750px;
+    text-align: center;
+}
+.banner-bg .banner h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 71px;
+    padding: 245px 150px 20px;
+}
+.banner-bg .banner p{
+    font-family: 'raleway-reg';
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+    padding: 0px 125px 75px;
+    line-height: 33px;
+}
+.banner-bg .banner a{
+    display: inline-block;
+    color: white;
+    background-color: #e84545;
+    font-family: 'raleway-semi';
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 46px;
+    padding: 0px 54px 0px;
+    transition: all linear 0.4s;
+}
+.banner-bg .banner a:hover{
+    background-color: white;
+    color: #e84545;
+    transform: scale(1.1);
+}
+
+
+/*======================================
+service starts=
+========================================*/
+
+.service-bg{
+    height: 520px;
+    /* background: darkcyan; */
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.service-bg .service{
+    height: 520px;
+    /* background: silver; */
+}
+.service-bg .service .service-item{
+    width: 370px;
+    height: 185px;
+    /* background: pink; */
+    float: left;
+    margin-bottom: 75px;
+    text-align: center;
+}
+.service-bg .service .service-item img{
+    transform: scale(1);
+    transition: all linear 0.4s;
+}
+.service-bg .service .service-item img:hover{
+    transform: scale(1.2);
+}
+.service-bg .service .service-item h5{
+    font-family: 'raleway-bold';
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2d3033;
+    padding: 30px 0 15px 0;
+}
+.service-bg .service .service-item p{
+    font-family: 'raleway-reg';
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    padding: 0 21px;
+}
+
+/*============================================
+gallery starts
+==============================================*/
+.gallery-bg .gallery-item{
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-bg .gallery-item img{
+    width: 100%;
+    height: 349px;
+}
+.gallery-bg .gallery-item .gallery-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all linear 0.5s;
+    transform: scaleX(0.1) rotate(0deg);
+    visibility: hidden;
+    opacity: 0;
+}
+.gallery-bg .gallery-item:hover .gallery-overlay{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.gallery-bg .gallery-item .gallery-overlay h5{
+    font-family: 'raleway-bold';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    padding-top: 156px;
+}
+.gallery-bg .gallery-item .gallery-overlay p{
+    font-family: 'raleway-reg';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 15px;
+}
+
+/*============================================
+testomonial starts
+=============================================*/
+
+.testimonial-bg{
+    height: 683px;
+    /* background-color: yellow; */
+    margin-top: 848px;
+}
+.testimonial-bg .testimonial{
+    height: 683px;
+    /* background: silver; */
+}
+.testimonial-bg .testimonial .testimonial-item{
+    width: 270px;
+    height: 683px;
+    /* background-color:thistle; */
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.4s;
+}
+.testimonial-bg .testimonial .testimonial-item:hover{
+    box-shadow: 5px 5px 5px 10px #c6cacc;
+    transform: scale(1.1);
+}
+.testimonial-bg .testimonial .testimonial-item::before{
+    content: '';
+    width: 20%;
+    height: 270px;
+    background-color: rgba(198, 202, 204, 0.452);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skew(-30deg);
+    transition: all linear 0.4s;
+}
+.testimonial-bg .testimonial .testimonial-item:hover::before{
+    left: 140%;
+}
+.testimonial-bg .testimonial .testimonial-item h3{
+    font-family: 'raleway-reg';
+    font-size: 22px;
+    color: #2d3033;
+    padding-top: 32px;
+}
+.testimonial-bg .testimonial .testimonial-item h4{
+    font-family: 'raleway-reg';
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    padding-top: 16px;
+}
+.testimonial-bg .testimonial .testimonial-item p{
+    font-family: 'raleway-reg';
+    font-size: 14px;
+    color: #6c7279;
+    padding-top: 30px;
+    line-height: 21px;
+}
+.testimonial-bg .testimonial .testimonial-item .socialmediaicon{
+    padding-top: 30px;
+    float: left;
+}
+.testimonial-bg .testimonial .testimonial-item .socialmediaicon a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    border: 1px dotted #c6cacc;
+    padding: 10px;
+    margin-right: 5px;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+.testimonial-bg .testimonial .testimonial-item .socialmediaicon a:hover{
+    border-radius: 25px;
+}
+/*=======================================
+woman start
+=========================================*/
+
+.woman-bg{
+    height: 500px;
+    background-color: silver;
+    margin-top: 100px;
+}
+.woman-bg .woman{
+    float: left;
+    height: 500px;
+    width: 50%;
+}
+.woman-bg .woman-text{
+    float: left;
+    background-color: #53354a;
+    height: 500px;
+    width: 50%;
+}
+.woman-bg .woman-text h1{
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    font-style: italic;
+    padding-top: 115px;
+    padding-left: 85px;
+    padding-right: 365px;
+}
+.woman-bg .woman-text p{
+    font-family: 'raleway-bold';
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    padding-left: 85px;
+    padding-top: 40px;
+}
+.woman-bg .woman-text .eclipse-box{
+    text-align: center;
+    padding-top: 65px;
+}
+.woman-bg .woman-text .eclipse-box img{
+    opacity: 0.5;
+    margin-left: 10px;
+}
+.woman-bg .woman-text .eclipse-box span img{
+    opacity: 1;
+}
+
+/*============================================
+download starts
+==============================================*/
+
+.download-bg{
+    height: 240px;
+    /* background: violet; */
+    margin-top: 100px;
+}
+.download-bg .download{
+    height: 240px;
+    /* background: yellowgreen; */
+    text-align: center;
+}
+.download-bg .download h1{
+    font-family: 'raleway';
+    font-weight: 300;
+}
+.download-bg .download p{
+    font-family: 'raleway-bold';
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 41px;
+}
+.download-bg .download a{
+    font-family: 'raleway';
+    font-weight: 500;
+    font-size:13px;
+    color: white;
+    text-transform: uppercase;
+    background: #e84545;
+    padding: 18px 83px;
+    transition: all linear 0.4s;
+}
+.download-bg .download a:hover{
+    background-color: white;
+    color: #e84545;
+    border: 1px solid #e84545;
+}
+
+/*=======================================
+footer 
+========================================*/
+
+.footer-bg{
+    height: 250px;
+    background-color: #3a3e64;
+}
+.footer-bg .footer{
+    height: 250px;
+    /* background-color: aqua; */
+
+}
+.footer-bg .footer .footer-item{
+    height: 250px;
+    width: 400px;
+    /* background-color: silver; */
+    float: left;
+    text-align: center;
+    
+}
+.footer-bg .footer .footer-item2{
+    text-align: center;
+}
+.footer-bg .footer .footer-item2{
+    height: 250px;
+    width: 230px;
+    /* background-color: silver; */
+    float: left;
+}
+.footer-bg .footer .footer-item2 .socialmediaicon2{
+    float: left;
+    padding: 20px 47px;
+}
+.footer-bg .footer .footer-item2 .socialmediaicon2 a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    border: 2px solid #c6cacc;
+    border-radius: 4px;
+    padding: 10px;
+    margin:0px 2.5px 0px 2.5px;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+.footer-bg .footer .footer-item2 .socialmediaicon2 a:hover{
+    border-radius: 25px;
+}
+.footer-bg .footer .footer-item h1{
+    font-family: 'raleway-bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    color: white;
+}
+.footer-bg .footer .footer-item2 h1{
+    font-family: 'raleway-bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    color: white;
+}
+.footer-bg .footer .footer-item p{
+    font-family: 'raleway[reg';
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.5;
+    padding: 22px 15px;
+}
